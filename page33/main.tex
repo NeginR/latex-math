@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage[final]{neurips}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage{titlesec}
+\usepackage{diagbox}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{xepersian}
+\settextfont{XB Yas.ttf}
+
+\title{صفحه 33}
+
+\author{%
+
+  نرم افزار ریاضی\\
+  \texttt{@gmail.com} \\
+}
+
+
+
+\begin{document}
+\baselineskip=0.7cm
+
+\begin{minipage}{0.1\textwidth}% adapt widths of minipages to your needs
+\includegraphics[width=1.2cm]{Amirkabir.jpg}
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.9\textwidth}\raggedleft
+دانشگاه صنعتی امیرکبیر\\
+مباحث ویژه در بهینه سازی\\
+\end{minipage}
+
+\makepertitle
+
+مقایسه کلی بین روش های خطی:\\
+
+\begin{enumerate}
+\item جستجوی خطی با حهت تند ترین کاهش
+\item جستجوی خطی با جهت نیوتونی
+\item جستجوی خطی با جهت شبه نیوتونی
+\item ناحیه اطمینان با جهت شبه نیوتونی
+\item روش CG\\\\
+\end{enumerate}
+
+\begin{flushleft}
+
+\begin{tabular}{|l|*{12}{c|}|}\hline
+
+\slashbox{روش}{فاکتور}
+&\makebox[5em]{همگرایی سراسری}&\makebox[4em]{مرتبه همگرایی}&\makebox[3em]{اعتمادپذیری}
+&\makebox[7em]{هرتکرارحجم محاسباتی}&\makebox[6em]{فضای محاسباتی هرتکرار}&\makebox[5em]{پیاده سازی آسان}\\\hline\hline
+
+LSباجهت تندترین جهت
+&1&1&1&6&2&5\\\hline
+LSباجهت نیوتونی
+&1&3&2&1&1&1\\
+\hline
+LSباجهت شبه نیوتونی
+&1&2&3&2&1&3\\\hline
+TRباجهت نیوتونی
+&5.1&3&2&1&1&1\\\hline
+TRباجهت شبه نیوتونی
+&5.1&2&6&2&1&2\\\hline
+CG
+&1&?&3&3&4&5\\\hline
+
+
+\end{tabular}
+
+\end{flushleft}
+
+\end{document}
+
+

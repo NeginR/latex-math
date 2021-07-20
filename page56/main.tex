@@ -1,0 +1,115 @@
+\documentclass{article}
+
+\usepackage{bbding}
+\usepackage[final]{neurips}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+
+\usepackage{amsfonts}       % blackboard math symbols
+
+\usepackage{graphicx}
+\usepackage{xepersian}
+\settextfont{XB Yas.ttf}
+
+\title{صفحه 58}
+
+\author{%
+  
+  نرم افزار ریاضی\\
+
+  \texttt{@gmail.com} \\
+}
+
+
+
+\begin{document}
+\baselineskip=0.7cm
+
+\begin{minipage}{0.1\textwidth}% adapt widths of minipages to your needs
+\includegraphics[width=1.2cm]{Amirkabir.jpg}
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.9\textwidth}\raggedleft
+دانشگاه صنعتی امیرکبیر\\
+مباحث ویژه در بهینه سازی\\
+\end{minipage}
+% \end{}
+
+
+\makepertitle
+
+
+بنابراین:\\
+
+\[\begin{bmatrix*}
+X^T & \lambda^T
+\end{bmatrix*}
+\times
+\begin{bmatrix*}
+H\lambda+A^T\lambda\\
+AX
+\end{bmatrix*}
+ = 0\]
+\[X^THX+\underbrace{X^TA^T}_\text{$X^TA^T=0$}\lambda+\lambda^T\underbrace{AX}_\text{$AX=0$}=0   \Rightarrow   X^THX=0\]\\
+از طرفی
+$X=Zu$
+و لذا
+$U^TZ^THZU=0$ 
+حال چون طبق فرض قضیه، 
+$ Z^THZ $ 
+ماتریس صفر مثبت است پس نتیجه می گیریم که باید 
+$U=0$
+و از اینکه 
+$X=Z=0 $ 
+نتیجه می گیریم که    
+$X=0$ 
+و از رابطه 
+$HX+A^T\lambda=0$ 
+و با توجه به اینکه $A$
+مرتبه سطری کامل است نتیجه می گیریم که $\lambda=0 $
+، پس از فرض
+$\begin{bmatrix*}
+ H & A^T \\
+ A & 0
+\end{bmatrix*}
+\times
+\begin{bmatrix*}
+X\\
+\lambda
+\end{bmatrix*}
+ = \begin{bmatrix*}
+0\\
+0
+\end{bmatrix*}$
+نتیجه گرفتیم که
+$\begin{bmatrix*}
+ X\\
+ \lambda
+\end{bmatrix*}=
+\begin{bmatrix*}
+0\\
+0
+\end{bmatrix*}$
+که ثابت می شود، دستگاه جواب منحصر به فرد دارد.\\
+\begin{flushleft}
+\raggedright{\RectangleBold\quad}\\
+\end{flushleft}
+\baselineskip=0.7cm
+قضیه: در مساله(*) اگر 
+$Z$ماتریس پوچی $A$
+باشد و $Z^THZ$
+ماتریس معین مثبت باشد ، آنگاه جواب حاصل از حل دستگاه 
+$KKT$ (که جوابی منحصر بفرد است.)
+جواب مینیمم سراسری و اکید برای مساله (*)
+می باشد. در حالیکه $Z^THZ$
+معین مثبت نباشد، امکان دارد دستگاه جواب داشته باشدویا نداشته باشد.\\
+نکته:در مسایل (*)می توان با حذف قیود تساوی ، مساله را به یک مساله نامقید و کوچک تر تبدیل کرد.\\
+در ادامه این نکته توضیح داده می شود:\\
+قیود $AX=B$
+را در نظر بگیرید و فرض کنید $Z $
+ماتریس پوچی $A$
+باشد.($AZ=0$) و  
+$X_0$
+یک جواب دلخواه مساله است.
+\end{document}
